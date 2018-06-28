@@ -86,7 +86,16 @@ erik_smallest_lottery_number = erik_sorted_lottery_numbers.first
 
 avril_lottery_numbers = users["Avril"][:lottery_numbers]
 avril_even_lottery_numbers = avril_lottery_numbers.select {|number| number.even?}
+# or...
+# even = []
+# for num in users["Avril"][:lottery_numbers]
+#   if num % 2 == 0
+#     even.push(num)
+#   end
+# end
+
 # p avril_even_lottery_numbers
+# p even
 
 # Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
 

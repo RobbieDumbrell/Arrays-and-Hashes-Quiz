@@ -41,9 +41,13 @@ number_of_stops = stops.length
 
 falkirk_answer1 = stops[2]
 falkirk_answer2 = stops[-5]
+falkirk_answer3 = stops.fetch(2)
+falkirk_answer4 = stops.fetch(-5)
 
 # p falkirk_answer1
 # p falkirk_answer2
+# p falkirk_answer3
+# p falkirk_answer4
 
 # Reverse the positions of the stops in the array
 
@@ -53,5 +57,5 @@ stops.reverse!
 # Print out all the stops using a for loop
 
 for stop in stops
-  p stop
+  # p stop
 end
